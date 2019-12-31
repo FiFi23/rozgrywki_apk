@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4DFE6"
+    tools:context=".activity.druzyny.editor.EditorActivityDruzyny">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/pole_nazwa_druzyny"
+            android:hint="@string/nazwa_druzyny"
+            android:textSize="25sp"
+            android:inputType="textCapSentences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill"
+            />
+
+        <EditText
+            android:id="@+id/pole_wygrane"
+            android:layout_below="@id/pole_nazwa_druzyny"
+            android:hint="@string/wpisz_wygrane"
+            android:inputType="number"
+            android:gravity="top|start"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/pole_przegrane"
+            android:layout_below="@id/pole_wygrane"
+            android:hint="@string/wpisz_przegrane"
+            android:inputType="number"
+            android:gravity="top|start"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill" />
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:id="@+id/pojemnik_zawodnicy"
+            android:layout_below="@id/pole_przegrane"
+            android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/przycisk_do_przenoszenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="#07575B"
+            android:textColor="#C4DFE6"
+            android:text="Zawodnicy"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pojemnik_zawodnicy"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/przycisk_do_przenoszenia2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:background="#07575B"
+                android:textColor="#C4DFE6"
+                android:text="Mecze"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

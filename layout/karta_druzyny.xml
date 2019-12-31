@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/karta_druzyny">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#003B46"/>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#07575B"
+        >
+
+        <TextView
+            android:id="@+id/karta_druzyny_nazwa_druzyny"
+            android:text="Nazwa Druzyżyny"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/karta_druzyny_nazwa_druzyny"
+            android:orientation="horizontal"
+            android:background="#003B46"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+        <TextView
+            android:id="@+id/karta_druzyny_liczba_wygranych"
+            android:layout_below="@id/karta_druzyny_nazwa_druzyny"
+            android:text="Wynik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textColor="#00FF00"/>
+
+            <TextView
+                android:id="@+id/karta_druzyny_przerwa"
+                android:layout_below="@id/karta_druzyny_liczba_wygranych"
+                android:text=" - "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#C4DFE6"/>
+
+        <TextView
+            android:id="@+id/karta_druzyny_liczba_przegranych"
+            android:layout_below="@id/karta_druzyny_przerwa"
+            android:text="Wynik"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="#FF0000"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

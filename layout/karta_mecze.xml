@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/karta_mecze">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#003B46"/>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#07575B">
+
+
+            <TextView
+                android:id="@+id/karta_mecze_nazwa_gospodarz"
+                android:text="Gospodarze"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#C4DFE6"
+                android:paddingLeft="5sp"
+                android:layout_toLeftOf="@id/pierwsza_linia"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/pierwsza_linia"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/karta_druzyny_przerwa"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="  vs  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#C4DFE6"/>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/karta_mecze_nazwa_gosc"
+                android:text="Goście"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="#C4DFE6"
+                android:paddingRight="5sp"
+                android:layout_toRightOf="@id/pierwsza_linia" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/pierwsza_linia"
+            android:id="@+id/druga_linia"
+            android:layout_centerInParent="true"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:paddingBottom="5sp">
+
+            <TextView
+                android:text="( "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#C4DFE6"/>
+            <TextView
+                android:id="@+id/karta_mecze_wynik_gospodarz"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="#C4DFE6"/>
+            <TextView
+                android:text=" - "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#C4DFE6"/>
+            <TextView
+                android:id="@+id/karta_mecze_wynik_gosc"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="#C4DFE6"/>
+            <TextView
+                android:text=" )"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#C4DFE6"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/druga_linia"
+            android:gravity="end">
+            <TextView
+                android:id="@+id/karta_mecze_data"
+                android:text="2018-12-05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#C4DFE6"
+                android:textStyle="italic"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:background="#003B46"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

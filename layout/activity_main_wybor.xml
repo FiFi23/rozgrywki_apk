@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4DFE6"
+    tools:context=".activity.menu.MainActivityWybor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/opis"
+        android:text="Wybierz opcję:"
+        android:textSize="25sp"
+        android:textColor="#07575B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/przycisk_do_druzyn"
+        android:layout_width="match_parent"
+        android:layout_below="@id/opis"
+        android:text="Drużyny"
+        android:background="#66A5AD"
+        android:textColor="#07575B"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/przycisk_do_zawodnikow"
+        android:layout_width="match_parent"
+        android:layout_below="@id/przycisk_do_druzyn"
+        android:text="Zawodnicy"
+        android:background="#07575B"
+        android:textColor="#66A5AD"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/przycisk_do_meczy"
+        android:layout_width="match_parent"
+        android:layout_below="@id/przycisk_do_zawodnikow"
+        android:text="Mecze"
+        android:background="#66A5AD"
+        android:textColor="#07575B"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
